@@ -8,9 +8,6 @@ RELEASE="$(rpm -E %fedora)"
 rpm-ostree install earlyoom
 systemctl enable earlyoom
 
-# Remove firefox
-rpm-ostree override remove firefox firefox-langpacks
-
 # Remove unnecessary packages
 rpm-ostree cleanup -m
 
