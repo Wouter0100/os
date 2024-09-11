@@ -4,6 +4,9 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
+# Install nice to haves
+rpm-ostree install screen
+
 # Install earlyoom
 rpm-ostree install earlyoom
 systemctl enable earlyoom
