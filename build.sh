@@ -5,7 +5,7 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 
 # Install nice to haves
-rpm-ostree install screen
+rpm-ostree install screen mscore-fonts-all
 
 # Install earlyoom
 rpm-ostree install earlyoom
